@@ -46,8 +46,8 @@ func main() {
 	var DaTouSon man
 	var UncleWang man
 
-	DaTouSon = student{human:human{"name":"大头儿子", "age":5},"id":007}
-	UncleWang = employ{human:human{"name":"隔壁王叔叔", "age":35},"job":"develop"}
+	DaTouSon = student{human:human{name:"大头儿子", age:5},id:007}
+	UncleWang = employ{human:human{name:"隔壁王叔叔", age:35},job:"develop"}
 
 	DaTouSon.sleep("呼呼呼")
 	DaTouSon.play("看漫画")
