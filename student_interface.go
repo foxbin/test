@@ -37,19 +37,19 @@ func (e *employ) work(do string) string {
 
 // 定有接口
 type man interface {
-	sleep()
-	play()
-	work()
+	sleep(do string)
+	paly(do string)
+	work(do string)
 }
 
 func main() {
 	var DaTouSon man
 	var UncleWang man
 
-	DaTouSon = student{name:"大头儿子", age:"5"}
-	UncleWang = employ{name:"隔壁王叔叔", age:"35"}
+	DaTouSon = student{human:human{"name":"大头儿子", "age":5},"id":007}
+	UncleWang = employ{human:human{"name":"隔壁王叔叔", "age":35},"job":"develop"}
 
-	DaTouSon.sleep("hhh")
+	DaTouSon.sleep("呼呼呼")
 	DaTouSon.play("看漫画")
 	DaTouSon.work("写作业")
 	UncleWang.sleep("啪啪啪")
